@@ -1,0 +1,81 @@
+<template>
+    <div :class="wrapCls">
+        <am-checkbox :class="`${prefixCls}-agree-label`" 
+            type="checkbox"
+            :name="name"
+            :defaultChecked="defaultChecked"
+            :checked="checked"
+            :disabled="disabled"
+            :tabindex="tabindex"
+            :value="value"
+            @click="onClick"
+            @focus="onFocus"
+            @blur="onBlur"
+            @change="onChange"
+        >
+            <slot></slot>
+        </am-checkbox>
+    </div>
+</template>
+<script>
+    import Checkbox from './checkbox.vue';
+    export default {
+        name:'AmAgreeItem',
+        model:{
+            prop:'checked',
+            event:'change'
+        },
+        props:{
+            prefixCls:{
+                type:String,
+                default:'am-checkbox'
+            },
+            name:{
+                type:String
+            },
+            defaultChecked:{
+                type:Boolean,
+                default:false
+            },
+            checked:{
+                type:Boolean
+            },
+            value:{
+                type:String
+            },
+            disabled:{
+                type:Boolean,
+                default:false
+            },
+            tabindex:{
+                type:String
+            }
+        },
+        computed:{
+            wrapCls(){
+                const {prefixCls} = this.$props;
+                return {
+                    [`${prefixCls}-agree`]:true
+                };
+            }
+        },
+        methods:{
+            onChange(val,e){
+                this.$emit('change',val,e);
+            },
+            onFocus(e){
+                this.$emit('focus',e);
+            },
+            onBlur(e){
+                this.$emit('blur',e);
+            },
+            onClick(e){
+                this.$emit('click',e);
+            }
+        },
+        components:{
+            'am-checkbox':Checkbox
+        }
+    };
+</script>
+

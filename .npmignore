@@ -1,0 +1,6 @@
+scripts/
+node_modules/
+src/
+sites/
+docs/
+test/

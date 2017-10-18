@@ -1,0 +1,39 @@
+@import (reference) '../../../style/themes/default';
+@iconPrefixCls: am-icon;
+.@{iconPrefixCls} {
+    fill: currentColor;
+    background-size: cover;
+    width: @icon-size-md;
+    height: @icon-size-md;
+    
+    &-xxs {
+        width: @icon-size-xxs;
+        height: @icon-size-xxs;
+    }
+    &-xs {
+        width: @icon-size-xs;
+        height: @icon-size-xs;
+    }
+    &-sm {
+        width: @icon-size-sm;
+        height: @icon-size-sm;
+    }
+    &-md {
+        width: @icon-size-md;
+        height: @icon-size-md;
+    }
+    &-lg {
+        width: @icon-size-lg;
+        height: @icon-size-lg;
+    }
+
+    &-loading{
+        animation:circle-anim 1s linear infinite;
+    }
+
+    @keyframes circle-anim{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}

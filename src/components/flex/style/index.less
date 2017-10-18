@@ -1,0 +1,90 @@
+@import (reference) '../../../style/themes/default';
+
+@flexPrefixCls:am-flexbox;
+
+.@{flexPrefixCls}{
+    overflow-y:hidden;
+    display: flex;
+    align-items: center;
+    &&-dir-row{
+        flex-direction: row;
+    }
+    &&-dir-row-reverse{
+        flex-direction: row-reverse;
+    }
+    &&-dir-column{
+        flex-direction: column;
+    }
+    &&-dir-column{
+        flex-direction: column-reverse;
+    }
+
+    &&-wrap{
+        flex-wrap: wrap;
+    }
+    &&-nowrap{
+        flex-wrap: nowrap;
+    }
+    &&-wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+    &&-justify-start{
+        justify-content: flex-start;
+    }
+    &&-justify-end{
+        justify-content: flex-end;
+    }
+    &&-justify-center{
+        justify-content: center;
+    }
+    &&-justify-between{
+        justify-content: space-between;
+    }
+    &&-justify-around{
+        justify-content: space-around;
+    }
+    &&-align-top{
+        align-items: flex-start;
+    }
+    &&-align-bottom{
+        align-items: flex-end;
+    }
+    &&-align-middle{
+        align-items: center;
+    }
+    &&-align-stretch{
+        align-items: stretch;
+    }
+    &&-align-baseline{
+        align-items: baseline;
+    }
+
+    &&-align-content-start{
+        align-content: flex-start;
+    }
+    &&-align-content-end{
+        align-content: flex-end;
+    }
+    &&-aligin-content-center{
+        align-content: center;
+    }
+    &&-align-content-between{
+        align-content: space-between;
+    }
+    &&-align-content-around{
+        align-content: space-around;
+    }
+    &&-align-content-stretch{
+        align-content: stretch;
+    }
+
+    & &-item{
+        flex: 1;
+        box-sizing: border-box;
+        margin-left:@h-spacing-md;
+        min-width: 20px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}

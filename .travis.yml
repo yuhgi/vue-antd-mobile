@@ -1,0 +1,13 @@
+sudo: false
+
+cache:
+  directories: 
+    - node_modules
+
+language: node_js
+
+node_js:
+  - "6"
+
+after_success:
+  - cat ./test/unit/coverage/report-lcov/lcov.info | ./node_modules/.bin/coveralls
