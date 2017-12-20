@@ -11,7 +11,7 @@ const spinner = ora({
 spinner.start();
 ghpages.publish('docs',{
     branch:'gh-pages',
-    repo: 'https://github.com/toothedcat/vue-antd-mobile.git',
+    repo: 'https://github.com/yuhgi/vue-antd-mobile.git',
     add:false
 },(err) => {
     if(err){

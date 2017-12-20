@@ -5,11 +5,11 @@
 - 实现基于 [Vue2.0](https://github.com/vuejs/vue)
 - 组件库样式使用 [Ant Design Mobile](https://github.com/ant-design/ant-design-mobile)
 
-[![Build Status](https://travis-ci.org/toothedcat/vue-antd-mobile.svg?branch=master)](https://travis-ci.org/toothedcat/vue-antd-mobile)
-[![Coverage Status](https://coveralls.io/repos/github/toothedcat/vue-antd-mobile/badge.svg?branch=master)](https://coveralls.io/github/toothedcat/vue-antd-mobile?branch=master)
+[![Build Status](https://travis-ci.org/yuhgi/vue-antd-mobile.svg?branch=master)](https://travis-ci.org/yuhgi/vue-antd-mobile)
+[![Coverage Status](https://coveralls.io/github/yuhgi/vue-antd-mobile/badge.svg?branch=master)](https://coveralls.io/github/yuhgi/vue-antd-mobile?branch=master)
 
-[Home 主页](https://toothedcat.github.io/vue-antd-mobile/)
-[Demo 示例](https://toothedcat.github.io/vue-antd-mobile/mobile/index.html)
+[Home 主页](https://yuhgi.github.io/vue-antd-mobile/)
+[Demo 示例](https://yuhgi.github.io/vue-antd-mobile/mobile/index.html)
 
 ## Install 安装
 
