@@ -18,7 +18,6 @@
     "babel-plugin-component": "^0.10.0",
     "babel-plugin-istanbul": "^4.1.4",
     "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-2": "^6.24.1",
     "chalk": "^2.0.1",
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.0.1",
@@ -79,7 +78,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toothedcat/vue-ant-design-mobile.git"
+    "url": "git+https://github.com/yuhgi/vue-ant-design-mobile.git"
   },
   "keywords": [
     "vue",
@@ -88,10 +87,10 @@
     "framework",
     "vue-component"
   ],
-  "author": "toothedcat",
+  "author": "yuhgi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/toothedcat/vue-ant-design-mobile/issues"
+    "url": "https://github.com/yuhgi/vue-ant-design-mobile/issues"
   },
-  "homepage": "https://github.com/toothedcat/vue-ant-design-mobile#readme"
+  "homepage": "https://github.com/yuhgi/vue-ant-design-mobile#readme"
 }
