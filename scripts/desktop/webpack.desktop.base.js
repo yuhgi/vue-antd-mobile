@@ -34,7 +34,9 @@ const md = require('markdown-it')({
             let codeIdx = idx+3+3+1;
             let titleContent = tokens[titleIdx].content;
             let descContent = tokens[descIdx].content;
+            console.log(descContent);
             let matches = /\((.+)\)/.exec(descContent);
+            console.log(matches);
             let pathContent = matches && matches.length ? matches[1] : '';
             let codeContent = tokens[codeIdx].markup + tokens[codeIdx].info + '\n' 
                 + tokens[codeIdx].content + tokens[codeIdx].markup;

@@ -21,7 +21,10 @@
             text-overflow: ellipsis;
             a {
                 color: rgba(0, 0, 0, .65);
-                text-decoration: none;
+                text-decoration:line-through;
+                &.completed{
+                    text-decoration: none;
+                }
                 &:hover {
                     color: #108ee9;
                 }
@@ -133,7 +136,7 @@
                                 :key="componentData.path"
                                 :to="componentData.path" 
                             >
-                                <a>
+                                <a :class="componentData.completed?'completed':''">
                                     <span>{{componentData.name}}</span>
                                     <span class="chinese">{{componentData.desc}}</span>
                                 </a>
@@ -156,22 +159,26 @@ export default {
                     children:[{
                         path:'/components/flex',
                         name:'Flex',
-                        desc:'Flex布局'
+                        desc:'Flex布局',
+                        completed:true
                     },{
                         path:'/components/wing-blank',
                         name:'WingBlank',
-                        desc:'两翼留白'
+                        desc:'两翼留白',
+                        completed:true
                     },{
                         path:'/components/white-space',
                         name:'WhiteSpace',
-                        desc:'上下留白'
+                        desc:'上下留白',
+                        completed:true
                     }]
                 },{
                     category:'Navigation',
                     children:[{
                         path:'/components/drawer',
-                        name:'drawer',
-                        desc:'抽屉'
+                        name:'Drawer',
+                        desc:'抽屉',
+                        completed:true
                     },{
                         path:'/components/menu',
                         name:'Menu',
@@ -179,7 +186,8 @@ export default {
                     },{
                         path:'/components/nav-bar',
                         name:'NavBar',
-                        desc:'导航栏'
+                        desc:'导航栏',
+                        completed:true
                     },{
                         path:'/components/popover',
                         name:'Popover',
