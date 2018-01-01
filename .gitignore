@@ -3,6 +3,5 @@ dist/
 .vscode/
 npm-debug.log
 coverage/
-docs/desktop/
-docs/mobile/
+docs/
 lib/
