@@ -199,7 +199,8 @@ export default {
                     },{
                         path:'/components/segmented-control',
                         name:'SegmentedControl',
-                        desc:'分段器'
+                        desc:'分段器',
+                        completed:true
                     },{
                         path:'/components/tabs',
                         name:'Tabs',
@@ -214,11 +215,13 @@ export default {
                     children:[{
                         path:'/components/button',
                         name:'Button',
-                        desc:'按钮'
+                        desc:'按钮',
+                        completed:true
                     },{
                         path:'/components/checkbox',
                         name:'Checkbox',
-                        desc:'复选框'
+                        desc:'复选框',
+                        completed:true
                     },{
                         path:'/components/date-picker',
                         name:'DatePicker',
@@ -246,7 +249,8 @@ export default {
                     },{
                         path:'/components/radio',
                         name:'Radio',
-                        desc:'单选框'
+                        desc:'单选框',
+                        completed:true
                     },{
                         path:'/components/search-bar',
                         name:'SearchBar',
@@ -293,11 +297,13 @@ export default {
                     },{
                         path:'/components/icon',
                         name:'Icon',
-                        desc:'图标'
+                        desc:'图标',
+                        completed:true
                     },{
                         path:'/components/list',
                         name:'List',
-                        desc:'列表'
+                        desc:'列表',
+                        completed:true
                     },{
                         path:'/components/notice-bar',
                         name:'NoticeBar',
@@ -320,7 +326,8 @@ export default {
                     },{
                         path:'/components/activity-indicator',
                         name:'ActivityIndicator',
-                        desc:'活动指示器'
+                        desc:'活动指示器',
+                        completed:true
                     },{
                         path:'/components/modal',
                         name:'Modal',
@@ -328,7 +335,8 @@ export default {
                     },{
                         path:'/components/progress',
                         name:'Progress',
-                        desc:'进度条'
+                        desc:'进度条',
+                        completed:true
                     },{
                         path:'/components/popup',
                         name:'Popup',
@@ -336,7 +344,8 @@ export default {
                     },{
                         path:'/components/toast',
                         name:'Toast',
-                        desc:'轻提示'
+                        desc:'轻提示',
+                        completed:true
                     }]
                 },{
                     category:'Gesture',
