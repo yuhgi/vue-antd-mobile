@@ -8,7 +8,7 @@
 [![Build Status](https://travis-ci.org/yuhgi/vue-antd-mobile.svg?branch=master)](https://travis-ci.org/yuhgi/vue-antd-mobile)
 [![Coverage Status](https://coveralls.io/repos/github/yuhgi/vue-antd-mobile/badge.svg?branch=master)](https://coveralls.io/github/yuhgi/vue-antd-mobile?branch=master)
 
-[Home 主页](https://yuhgi.github.io/vue-antd-mobile/)
+[Home 主页](https://yuhgi.github.io/vue-antd-mobile/desktop/index.html)
 [Demo 示例](https://yuhgi.github.io/vue-antd-mobile/mobile/index.html)
 
 ## Install 安装
