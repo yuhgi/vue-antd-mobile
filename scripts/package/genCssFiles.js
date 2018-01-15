@@ -14,7 +14,7 @@ const spinner = ora({
 
 const basePath = path.join(__dirname, '../../lib');
 
-let genComponentFiles = function (callback) {
+const genComponentFiles = function (callback) {
     Object.keys(components).forEach(key => {
         let filePath = path.join(basePath, key.toString(), 'style/index.js');
         let contentStr = 'require("./index.css");\r\n';
@@ -30,7 +30,7 @@ let genComponentFiles = function (callback) {
     callback(null);
 };
 
-let compileLessFile = function (filePath, callback) {
+const compileLessFile = function (filePath, callback) {
     let lessStr = fs.readFileSync(filePath, 'utf8');
     less.render(lessStr, {
         paths: [
@@ -45,7 +45,7 @@ let compileLessFile = function (filePath, callback) {
     });
 };
 
-let mkdir = function (dirpath, callback) {
+const mkdir = function (dirpath, callback) {
     if (typeof dirpath !== 'string') {
         callback(new Error('invalid param'));
     }
@@ -67,7 +67,7 @@ let mkdir = function (dirpath, callback) {
     });
 };
 
-let writeFile = function (dir, filename, content, callback) {
+const writeFile = function (dir, filename, content, callback) {
     series([
         (callback) => {
             mkdir(dir, (err) => {
@@ -98,7 +98,7 @@ let writeFile = function (dir, filename, content, callback) {
 };
 
 
-let genBaseCssFiles = function (callback) {
+const genBaseCssFiles = function (callback) {
     waterfall([
         (callback) => {
             // compile src/style/index.less

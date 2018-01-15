@@ -8,14 +8,14 @@ const spinner = ora({
     color:'green'
 });
 spinner.start();
-webpack(webpackConfig, function (err, stats) {
+webpack(webpackConfig,  (err, stats) => {
     spinner.stop();
     if (err) { 
         spinner.fail(err.toString());
         return;
     }
     
-    var info = stats.toString({
+    const info = stats.toString({
         colors: true,
         modules: false,
         children: false,

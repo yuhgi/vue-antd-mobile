@@ -92,11 +92,11 @@ module.exports = {
         "no-class-assign":2,// 禁止修改类声明的变量
         "no-this-before-super": 2,// 禁止在构造函数中，在调用 super() 之前使用 this 或 super
         "no-dupe-class-members":2,// 禁止类成员中出现重复的名称
-        "prefer-rest-params":0,// 要求使用rest参数而不是arguments
-        "prefer-spread":0,// 要求使用扩展运算符而非 .apply()
-        "no-var":"off",//避免使用var,使用const和let
-        "prefer-const":"off",//不重新赋值的变量使用const
-        "no-const-assign":"error",//const类型的变量不能重新赋值
+        "prefer-rest-params":2,// 要求使用rest参数而不是arguments
+        "prefer-spread":2,// 要求使用扩展运算符而非 .apply()
+        "no-var":2,//避免使用var,使用const和let
+        "prefer-const":2,//不重新赋值的变量使用const
+        "no-const-assign":2,//const类型的变量不能重新赋值
         "prefer-arrow-callback":1,//使用箭头函数=>
         "arrow-spacing":[//箭头=>前后要加空格
             "error",

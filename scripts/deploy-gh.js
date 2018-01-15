@@ -1,5 +1,5 @@
-var ghpages = require('gh-pages');
-var path = require('path');
+const ghpages = require('gh-pages');
+const path = require('path');
 const ora = require('ora');
 const chalk = require('chalk');
 

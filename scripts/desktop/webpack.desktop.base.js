@@ -29,16 +29,16 @@ const md = require('markdown-it')({
     },
     render(tokens,idx){
         if(tokens[idx].nesting === 1){
-            let titleIdx = idx+2;
-            let descIdx = idx+3+2;
-            let codeIdx = idx+3+3+1;
-            let titleContent = tokens[titleIdx].content;
-            let descContent = tokens[descIdx].content;
-            console.log(descContent);
-            let matches = /\((.+)\)/.exec(descContent);
-            console.log(matches);
-            let pathContent = matches && matches.length ? matches[1] : '';
-            let codeContent = tokens[codeIdx].markup + tokens[codeIdx].info + '\n' 
+            const titleIdx = idx+2;
+            const descIdx = idx+3+2;
+            const codeIdx = idx+3+3+1;
+            const titleContent = tokens[titleIdx].content;
+            const descContent = tokens[descIdx].content;
+
+            const matches = /\((.+)\)/.exec(descContent);
+
+            const pathContent = matches && matches.length ? matches[1] : '';
+            const codeContent = tokens[codeIdx].markup + tokens[codeIdx].info + '\n' 
                 + tokens[codeIdx].content + tokens[codeIdx].markup;
             let codeHighlight = md.render(codeContent);
 

@@ -11,7 +11,7 @@ const spinner = ora({
     color: 'green'
 });
 
-rimraf(path.join(__dirname, '../../lib/*.*'), function (err) {
+rimraf(path.join(__dirname, '../../lib/*.*'),  (err) => {
     if (err) {
         throw err;
     }

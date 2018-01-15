@@ -15,7 +15,7 @@ const uglifyJSPlugin = new webpack.optimize.UglifyJsPlugin({
 
 const components = require('./component');
 
-let entry = {};
+const entry = {};
 
 Object.keys(components).forEach((key) => {
     entry[key] = path.join(__dirname,components[key],'index.js');

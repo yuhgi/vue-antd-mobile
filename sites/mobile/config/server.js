@@ -1,4 +1,4 @@
-const address = 'https://toothedcat.github.io/vue-antd-mobile/mobile/index.html';
+const address = 'https://yuhgi.github.io/vue-antd-mobile/mobile/index.html';
 
 //const address = 'http://localhost:8081';
 
